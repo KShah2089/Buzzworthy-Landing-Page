@@ -5,18 +5,19 @@
     width: 50vw;
     height: 100vh;
     z-index: -1;
-    transition: width 0.7s;
+    transition: width 700ms;
 }
 
 .left {
     left: 0;
     background-color: white;
+    
 }
 
 .right {
     right: 0;
     background-color: #253069;
-//    background-color: black;
+    
 }
 
 .whole {
@@ -41,10 +42,26 @@
 
 .title {
     margin: auto;
-    padding: 15px 0 15px 0;
+    padding: 15px 0 0 15px;
     width: fit-content;
     color: gray;
     transition: all 1s;
+    position: relative;
+}
+
+.title:before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    color: white;
+    overflow: hidden;
+    transition: width 0.5s;
+}
+
+.title:hover:before {
+    width: 100%;
 }
 
 .title ~ .whole {
@@ -60,7 +77,7 @@
 }
 
 .title:hover {
-    color: white;
+    color: black;
     font-size: 11rem;
 }
 
@@ -108,4 +125,29 @@
 
 .t10:hover ~ .whole {
     background-image: url("images/p-hennessey.jpg");    
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 25px;
+    font-family: sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.l {
+    left: 25px;
+    color: #253069;
+}
+
+.r {
+    right: 50px;
+    color: white;
 }
