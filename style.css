@@ -21,7 +21,6 @@
 }
 
 .whole {
-    background-image: linear-gradient(#2c3e50, #bdc3c7);
     position: fixed;
     top: 0;
     left: 0;
@@ -81,50 +80,10 @@
     font-size: 11rem;
 }
 
-.title:hover ~ .whole {
+.img-fit {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.t1:hover ~ .whole {
-    background-image: url("images/p-helias.jpg");    
-}
-
-.t2:hover ~ .whole {
-    background-image: url("images/p-snooze.jpg");    
-}
-
-.t3:hover ~ .whole {
-    background-image: url("images/p-betches.jpg");    
-}
-
-.t4:hover ~ .whole {
-    background-image: url("images/p-allpro.jpg");    
-}
-
-.t5:hover ~ .whole {
-    background-image: url("images/p-cornerstone.jpg");    
-}
-
-.t6:hover ~ .whole {
-    background-image: url("images/p-taylor.jpg");    
-}
-
-.t7:hover ~ .whole {
-    background-image: url("images/p-modernmd.jpg");    
-}
-
-.t8:hover ~ .whole {
-    background-image: url("images/p-storyverse.jpg");    
-}
-
-.t9:hover ~ .whole {
-    background-image: url("images/p-gts.jpg");    
-}
-
-.t10:hover ~ .whole {
-    background-image: url("images/p-hennessey.jpg");    
 }
 
 footer {
